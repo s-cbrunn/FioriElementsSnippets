@@ -44,7 +44,8 @@ sap.ui.define([
 								nodes: [{ text: "", }]
 							};
 							this.aTreeStructure.push(oFolderObject);
-						} else if (directoryElements[i].className === 'icon icon icon-md icon-text') {
+						} else if (directoryElements[i].className === 'icon icon icon-md icon-text' ||
+						           directoryElements[i].className === 'logo logo-img-1x') {
 							var sFileName = directoryElements[i].title.substring(0, directoryElements[i].title.length);
 							var oFileObject = {
 								text: sFileName,
