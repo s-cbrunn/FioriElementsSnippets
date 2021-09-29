@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"de/scbrunn/fesnippet/model/models"
+	"de/scbrunn/fesnippet/model/FolderStructure"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
@@ -24,7 +24,9 @@ sap.ui.define([
 			this.getRouter().initialize();
 
 			// set the device model
-			this.setModel(models.createDeviceModel(), "device");
+			
+			// at the moment, not relevant!
+			//this.setModel(FolderStructure.createDeviceModel(), "device");
 		}
 	});
 });

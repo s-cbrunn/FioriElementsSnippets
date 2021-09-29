@@ -1,14 +1,17 @@
-<mvc:View
-    controllerName="de.scbrunn.fesnippet.controller.App"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
->
+<mvc:View controllerName="de.scbrunn.fesnippet.controller.App"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content />
+					<content>
+						<core:HTML id="idHTMLContent"/>
+					</content>
+					<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState">
+						<StandardTreeItem title="{text}"/>
+					</Tree>
 				</Page>
 			</pages>
 		</App>
