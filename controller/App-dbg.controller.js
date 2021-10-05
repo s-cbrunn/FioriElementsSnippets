@@ -6,7 +6,7 @@ sap.ui.define([
 	/**
 	 * @param {typeof sap.ui.core.mvc.Controller} Controller
 	 */
-	function (Controller, FolderStructure, showdown) {
+	function (Controller, FolderStructure) {
 		"use strict";
 
 		return Controller.extend("de.scbrunn.fesnippet.controller.App", {
@@ -15,12 +15,15 @@ sap.ui.define([
 				this.getView().setModel(FolderStructure.getJSONModel());
 				FolderStructure.getFolderStructure();
 
+				//
+				//
 
-				/*	var converter = new showdown.Converter(),
-					text      = '# hello, markdown!',
-					html      = converter.makeHtml(text);
+				var converter = new showdown.Converter(),
+				text      = '# Hello, Fiori Elements World',
+				html      = converter.makeHtml(text);
 	
-					this.getView().byId(idHTMLContent).setContent(html); */
+				var oHTML = this.byId("idHTMLContent");
+				oHTML.setContent(html);
 			},
 
 			onToggleOpenState: function (oEvent) {
@@ -29,6 +32,7 @@ sap.ui.define([
 				var bExpanded = oEvent.getParameter("expanded");
 				var sPath = oItemContext.getPath();
 				var oNodeObject = this.getView().getModel().getObject(sPath);
+
 				var oTree = this.byId("idNavTree");
 
 				FolderStructure.sendRequest(oNodeObject.childUrl,sPath);

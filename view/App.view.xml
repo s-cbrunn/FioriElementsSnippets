@@ -1,19 +1,23 @@
 <mvc:View controllerName="de.scbrunn.fesnippet.controller.App"
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-	xmlns="sap.m"
-	xmlns:core="sap.ui.core">
-	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content>
-						<core:HTML id="idHTMLContent"/>
-					</content>
-					<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState">
-						<StandardTreeItem title="{text}"/>
-					</Tree>
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	displayBlock="true"
+	xmlns="sap.m">
+
+	<SplitApp id="idSplitApp" initialDetail="detail" initialMaster="master">
+		<masterPages>
+			<Page id="idNavPage" title="Navigation">
+				<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState">
+					<StandardTreeItem title="{text}"/>
+				</Tree>
+			</Page>
+		</masterPages>
+		<detailPages>
+			<Page id="idDetailPage" title="">
+					<core:HTML id="idHTMLContent" />
+			</Page>
+		</detailPages>
+		
+	</SplitApp>
+
 </mvc:View>
