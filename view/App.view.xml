@@ -7,8 +7,9 @@
 	<SplitApp id="idSplitApp" initialDetail="detail" initialMaster="master">
 		<masterPages>
 			<Page id="idNavPage" title="Navigation">
-				<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState">
-					<StandardTreeItem title="{text}"/>
+				<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState"  >
+					<StandardTreeItem title="{text}" press=".onSelectTopic($event, ${directLink})" type="Active" />
+					<!-- <TreeItemBase /> -->
 				</Tree>
 			</Page>
 		</masterPages>

@@ -8,13 +8,12 @@ sap.ui.define([
 
 		getJSONModel: function () {
 			this.oJsonModel = new JSONModel();
-
 			return this.oJsonModel
 		},
 		getFolderStructure: function () {
 			this.folderStructure = {};
 			this.folderRequest = new XMLHttpRequest();
-			debugger;
+
 			if (window.location.hostname === "localhost") {
 				this.sendRequest('content/', '')
 			} else {
@@ -47,8 +46,7 @@ sap.ui.define([
 
 					for (var i = 2; i < directoryElements.length; i++) {
 
-						if (directoryElements[i].className === 'icon icon-directory') {	// File
-							debugger;
+						if (directoryElements[i].className === 'icon icon-directory') {	// Folder
 							var sFolderName = directoryElements[i].title.substring(0, directoryElements[i].title.length - 1);
 							var sUrl = directoryElements[i].href.replace('http://', '').replace(directoryElements[i].host, '');
 							var oFolderObject = {
@@ -58,10 +56,11 @@ sap.ui.define([
 							};
 							this._aTreeStructure.push(oFolderObject);
 						} else if (directoryElements[i].className === 'icon icon icon-md icon-text' ||
-							directoryElements[i].className === 'logo logo-img-1x') {	// Folder
+							directoryElements[i].className === 'logo logo-img-1x') {	// File
 							var sFileName = directoryElements[i].title.substring(0, directoryElements[i].title.length);
 							var oFileObject = {
-								text: sFileName,
+								directLink: sPath + sFileName,
+								text: sFileName
 							};
 							this._aTreeStructure.push(oFileObject);
 						}
@@ -100,7 +99,8 @@ sap.ui.define([
 							this._aTreeStructure.push(oFolderObject);
 						} else {								   // File
 							var oFileObject = {
-								text: oGitHubObjectTree[i].path,
+								directLink: oGitHubObjectTree[i].url,
+								text: oGitHubObjectTree[i].path
 							};
 							this._aTreeStructure.push(oFileObject);
 						}
@@ -110,6 +110,27 @@ sap.ui.define([
 					this.oJsonModel.setProperty(sModelPath ? sModelPath + "/nodes" : "/", this._aTreeStructure);
 				}
 			}.bind(this);
+
+		},
+
+		getDocument: function (sPath) {
+
+			var documentRequest = new XMLHttpRequest();
+			documentRequest.onreadystatechange = function () {
+				if (documentRequest.readyState == 4 && documentRequest.status == 200) {
+					if(window.location.hostname === "localhost"){
+						debugger;
+					}
+					else{
+						debugger;
+						var oGitHubObject = JSON.parse(documentRequest.responseText);
+						var decodedString = atob(oGitHubObject.content);
+					}
+					return 
+				}
+			}
+			documentRequest.open('GET', sPath);
+			documentRequest.send();
 
 		}
 

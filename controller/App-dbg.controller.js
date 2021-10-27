@@ -11,7 +11,7 @@ sap.ui.define([
 
 		return Controller.extend("de.scbrunn.fesnippet.controller.App", {
 			onInit: function () {
-				debugger;
+				
 				this.getView().setModel(FolderStructure.getJSONModel());
 				FolderStructure.getFolderStructure();
 
@@ -29,13 +29,21 @@ sap.ui.define([
 			onToggleOpenState: function (oEvent) {
 				var iItemIndex = oEvent.getParameter("itemIndex");
 				var oItemContext = oEvent.getParameter("itemContext");
-				var bExpanded = oEvent.getParameter("expanded");
 				var sPath = oItemContext.getPath();
 				var oNodeObject = this.getView().getModel().getObject(sPath);
 
 				var oTree = this.byId("idNavTree");
 
 				FolderStructure.sendRequest(oNodeObject.childUrl,sPath);
+			},
+
+			onSelectTopic: function(oEvent, sDirectUrl){
+				if(sDirectUrl !== undefined){ 
+					debugger;
+					var content = FolderStructure.getDocument(sDirectUrl);
+					debugger;
+				}
+				
 			}
 		});
 	});
