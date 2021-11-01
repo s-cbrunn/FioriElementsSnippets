@@ -11,19 +11,19 @@ sap.ui.define([
 
 		return Controller.extend("de.scbrunn.fesnippet.controller.App", {
 			onInit: function () {
-				
+
 				this.getView().setModel(FolderStructure.getJSONModel());
 				FolderStructure.getFolderStructure();
 
-				//
+				/*
 				//
 
 				var converter = new showdown.Converter(),
-				text      = '# Hello, Fiori Elements World',
-				html      = converter.makeHtml(text);
-	
+					text = '# Hello, Fiori Elements World',
+					html = converter.makeHtml(text);
+
 				var oHTML = this.byId("idHTMLContent");
-				oHTML.setContent(html);
+				oHTML.setContent(html); */
 			},
 
 			onToggleOpenState: function (oEvent) {
@@ -34,16 +34,32 @@ sap.ui.define([
 
 				var oTree = this.byId("idNavTree");
 
-				FolderStructure.sendRequest(oNodeObject.childUrl,sPath);
+				FolderStructure.sendRequest(oNodeObject.childUrl, sPath);
 			},
 
-			onSelectTopic: function(oEvent, sDirectUrl){
-				if(sDirectUrl !== undefined){ 
-					debugger;
-					var content = FolderStructure.getDocument(sDirectUrl);
-					debugger;
-				}
+			onSelectTopic: function (oEvent, sDirectUrl, sTitel) {
+				if (sDirectUrl !== undefined) {
+					var oDetailPage = this.byId("idDetailPage");
+					oDetailPage.setTitle(sTitel);
+
+					FolderStructure.getDocument(sDirectUrl).then(function (sMarkdownText) {
+						debugger;
+						var oConverter = new showdown.Converter();
+
+					    var sHTML = oConverter.makeHtml(sMarkdownText);
+						//sHTML = "<div id=\"idContent\">" + sHTML + "</div>";
+
+						var oHTML = this.byId("idHTMLContent");
+						
+						
+						oHTML.setContent("");
+				        oHTML.setContent(sHTML);
+
+					}.bind(this)
+					);
 				
+				}
+
 			}
 		});
 	});

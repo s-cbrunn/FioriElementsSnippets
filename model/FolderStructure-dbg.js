@@ -113,25 +113,29 @@ sap.ui.define([
 
 		},
 
-		getDocument: function (sPath) {
-
-			var documentRequest = new XMLHttpRequest();
-			documentRequest.onreadystatechange = function () {
-				if (documentRequest.readyState == 4 && documentRequest.status == 200) {
-					if(window.location.hostname === "localhost"){
-						debugger;
+		getDocument: async function (sPath) {
+			var oPromise = new Promise(function (resolve, reject) {
+				var documentRequest = new XMLHttpRequest();
+				documentRequest.onreadystatechange = function () {
+					if (documentRequest.readyState == 4 && documentRequest.status == 200) {
+						if (window.location.hostname === "localhost") {
+							
+							var content = documentRequest.responseText;
+							resolve(content);
+						}
+						else {
+							
+							var oGitHubObject = JSON.parse(documentRequest.responseText);
+							var decodedString = atob(oGitHubObject.content);
+							resolve(decodedString);
+						}
+						return
 					}
-					else{
-						debugger;
-						var oGitHubObject = JSON.parse(documentRequest.responseText);
-						var decodedString = atob(oGitHubObject.content);
-					}
-					return 
 				}
-			}
-			documentRequest.open('GET', sPath);
-			documentRequest.send();
-
+				documentRequest.open('GET', sPath);
+				documentRequest.send();
+			});
+			return oPromise;
 		}
 
 	};
