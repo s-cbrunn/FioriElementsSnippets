@@ -16,7 +16,25 @@ sap.ui.define([
 			if (window.location.hostname === "localhost") {
 				this.sendRequest('content/', '')
 			} else {
-				this.sendRequest('https://api.github.com/repos/s-cbrunn/FioriElementsSnippets/git/trees/b067e5ee58baafdfb6f4576eb4b0325f472c596f', '')
+
+				this.folderRequest.open('GET', "https://api.github.com/repos/s-cbrunn/FioriElementsSnippets/contents/", true);
+			    this.folderRequest.send();    
+				debugger;
+				this.folderRequest.onreadystatechange = function () {
+				
+					if (this.folderRequest.readyState === 4) {
+						debugger;
+						var aGitHubObject = JSON.parse(this.folderRequest.responseText);	
+						for(var i=0; i < aGitHubObject.length; i++){
+							if(aGitHubObject[i].name === "content"){
+								this._sendRequestGitHub(aGitHubObject[i].git_url, '');
+								return;
+							}
+
+						}
+	
+					}
+				}.bind(this);
 			}
 
 		},
@@ -25,7 +43,7 @@ sap.ui.define([
 			if (window.location.hostname === "localhost") {
 				this._sendRequestLocalHost(sPath, sModelPath);
 			} else {
-				this._sendRequestGitHub(sPath, sModelPath);
+				this._sendRequestGitHub(sPath, sModelPath)
 			}
 		},
 
