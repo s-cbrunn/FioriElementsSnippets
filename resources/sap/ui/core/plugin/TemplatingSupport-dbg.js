@@ -18,7 +18,7 @@ sap.ui.define(['sap/ui/core/Core', 'sap/ui/core/tmpl/Template', "sap/base/Log"],
 	 * @author Peter Muessig
 	 * @public
 	 * @since 1.15.0
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @alias sap.ui.core.plugin.TemplatingSupport
 	 */
 	var TemplatingSupport = function() {

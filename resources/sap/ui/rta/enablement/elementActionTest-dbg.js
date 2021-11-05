@@ -51,7 +51,7 @@ sap.ui.define([
 	 * E.g. <code>controlEnablingCheck.only("Remove");</code>
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @static
 	 * @since 1.42

@@ -24,7 +24,7 @@ function(
 	 * @extends sap.ui.base.Object
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @since 1.78.0
 	 * @alias sap.ui.mdc.condition.FilterConverter
 	 *

@@ -15,7 +15,7 @@ sap.ui.define([
 	 * @class The <code>AdaptationFilterBar</code> control is used for a lightweight FilterBar implementation in p13n panels
 	 * @extends sap.ui.mdc.filterbar.FilterBarBase
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @private
 	 * @since 1.80.0

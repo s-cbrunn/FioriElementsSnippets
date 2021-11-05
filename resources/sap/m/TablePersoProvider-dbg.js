@@ -21,7 +21,7 @@ sap.ui.define(['sap/ui/base/ManagedObject', "sap/base/Log"],
 	 * @extends sap.ui.base.ManagedObject
 	 * @abstract
 	 * @author SAP
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @alias sap.m.TablePersoProvider
 	 */
 	var TablePersoProvider = ManagedObject.extend("sap.m.TablePersoProvider", /** @lends sap.m.TablePersoProvider */

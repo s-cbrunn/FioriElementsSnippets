@@ -11,7 +11,7 @@ sap.ui.define([], function() {
 	 * Handles dynamic style changes of items when sap.ui.layout.cssgrid.GridBoxLayout is used.
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @private
 	 * @constructor

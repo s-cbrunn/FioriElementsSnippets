@@ -34,7 +34,7 @@ sap.ui.define([
 		],
 		elements: [],
 		noLibraryCSS: false,
-		version: "1.84.17"
+		version: "1.84.19"
 	});
 
 	return sap.ui.codeeditor;

@@ -58,7 +58,7 @@ sap.ui.define([
 		 * @class The Chart control creates a chart based on metadata and the configuration specified.
 		 * @extends sap.ui.mdc.Control
 		 * @author SAP SE
-		 * @version 1.84.17
+		 * @version 1.84.19
 		 * @constructor
 		 * @experimental
 		 * @private

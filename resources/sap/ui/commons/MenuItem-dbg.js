@@ -22,7 +22,7 @@ sap.ui.define(['./MenuItemBase', './library', 'sap/ui/unified/MenuItem'],
 	 * @extends sap.ui.unified.MenuItem
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @since 1.0.0
 	 *
 	 * @constructor

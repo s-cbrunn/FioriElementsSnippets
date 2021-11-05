@@ -36,7 +36,7 @@ sap.ui.define([
 	 * @class Item that represents one file to be uploaded using the {@link sap.m.upload.UploadSet} control.
 	 * @extends sap.ui.core.Element
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @public
 	 * @since 1.63
@@ -927,6 +927,21 @@ sap.ui.define([
 
 	UploadSetItem.prototype._isRestricted = function () {
 		return this._bFileTypeRestricted || this._bNameLengthRestricted || this._bSizeRestricted || this._bMediaTypeRestricted;
+	};
+
+	UploadSetItem.prototype.exit = function() {
+		if (this._oProgressIndicator) {
+			this._oProgressIndicator.destroy();
+			this._oProgressIndicator = null;
+		}
+		if (this._oStateLabel) {
+			this._oStateLabel.destroy();
+			this._oStateLabel = null;
+		}
+		if (this._oProgressBox) {
+			this._oProgressBox.destroy();
+			this._oProgressBox = null;
+		}
 	};
 
 	return UploadSetItem;

@@ -25,7 +25,7 @@ sap.ui.define([
 	 * @constructor
 	 * @alias sap.uxap.changeHandler.AddIFrameObjectPageLayout
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @since 1.75
 	 * @experimental Since 1.75
 	 */

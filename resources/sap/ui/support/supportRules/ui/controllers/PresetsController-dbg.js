@@ -89,7 +89,7 @@ sap.ui.define([
 	 *
 	 * @extends sap.ui.support.supportRules.ui.controllers.BaseController
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @alias sap.ui.support.supportRules.ui.controllers.PresetsController
 	 */
@@ -207,12 +207,12 @@ sap.ui.define([
 	PresetsController.prototype.onPresetItemReset = function (oEvent) {
 		var sPath = oEvent.getSource().getBindingContext().getPath(),
 			oPreset = this.oModel.getProperty(sPath),
-			aPresets = oPreset.isSystemPreset ?  PresetsUtils.getSystemPresets() : this.oModel.getProperty("/customPresets"),
+			aPresets = oPreset.isSystemPreset ? PresetsUtils.getSystemPresets() : this.oModel.getProperty("/customPresets"),
 			oCLI = oEvent.getSource().getParent().getParent().getParent();
 
 		// We hide the focused item (the button), so we have to restore the focus manually,
 		// because the ResponsivePopover can't restore it on Chrome.
-		// This way the popover is not closing on all browsers, which results in consistency.
+		// This way the popover is kept open on all browsers, which provides consistency.
 		oCLI.focus();
 
 		aPresets.forEach(function (oInitialPreset) {
@@ -220,7 +220,6 @@ sap.ui.define([
 				this.oModel.setProperty(sPath + "/title", oInitialPreset.title);
 				this.oModel.setProperty(sPath + "/selections", oInitialPreset.selections);
 				this.oModel.setProperty(sPath + "/isModified", false);
-				return true;
 			}
 		}.bind(this));
 

@@ -31,7 +31,7 @@ sap.ui.define([
 	 * @alias sap.ui.integration.designtime.baseEditor.util.ObjectBinding
 	 * @author SAP SE
 	 * @since 1.70.0
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @experimental since 1.70.0
 	 */

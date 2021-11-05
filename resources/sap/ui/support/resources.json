@@ -79,7 +79,7 @@
 		{
 			"name": "library-h2-preload.js",
 			"module": "sap/ui/support/library-h2-preload.js",
-			"size": 15000,
+			"size": 14952,
 			"merged": true,
 			"required": [
 				"jquery.sap.global.js",
@@ -126,7 +126,6 @@
 				"sap/m/TextArea.js",
 				"sap/m/Title.js",
 				"sap/m/Toolbar.js",
-				"sap/m/ToolbarLayoutData.js",
 				"sap/m/ToolbarSpacer.js",
 				"sap/m/VBox.js",
 				"sap/m/library.js",
@@ -231,7 +230,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/ui/support/library-preload.js",
-			"size": 178517,
+			"size": 178683,
 			"merged": true,
 			"required": [
 				"jquery.sap.global.js",
@@ -278,7 +277,6 @@
 				"sap/m/TextArea.js",
 				"sap/m/Title.js",
 				"sap/m/Toolbar.js",
-				"sap/m/ToolbarLayoutData.js",
 				"sap/m/ToolbarSpacer.js",
 				"sap/m/VBox.js",
 				"sap/m/library.js",
@@ -379,7 +377,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 154381,
+			"size": 154371,
 			"isDebug": true
 		},
 		{
@@ -416,7 +414,7 @@
 		},
 		{
 			"name": "resources.json",
-			"size": 30016
+			"size": 29906
 		},
 		{
 			"name": "supportRules/Analyzer-dbg.js",
@@ -1080,7 +1078,7 @@
 		{
 			"name": "supportRules/ui/controllers/PresetsController-dbg.js",
 			"module": "sap/ui/support/supportRules/ui/controllers/PresetsController.js",
-			"size": 20689,
+			"size": 20667,
 			"isDebug": true,
 			"required": [
 				"sap/m/GroupHeaderListItem.js",
@@ -1100,7 +1098,7 @@
 		{
 			"name": "supportRules/ui/controllers/PresetsController.js",
 			"module": "sap/ui/support/supportRules/ui/controllers/PresetsController.js",
-			"size": 10067,
+			"size": 10055,
 			"required": [
 				"sap/m/GroupHeaderListItem.js",
 				"sap/m/MessageBox.js",
@@ -1335,12 +1333,12 @@
 		},
 		{
 			"name": "supportRules/ui/styles/overlay.css",
-			"size": 3716
+			"size": 3787
 		},
 		{
 			"name": "supportRules/ui/views/Analysis.view.xml",
 			"module": "sap/ui/support/supportRules/ui/views/Analysis.view.xml",
-			"size": 6235,
+			"size": 6531,
 			"required": [
 				"sap/m/Bar.js",
 				"sap/m/Button.js",
@@ -1356,8 +1354,6 @@
 				"sap/m/Page.js",
 				"sap/m/StandardListItem.js",
 				"sap/m/Text.js",
-				"sap/m/Toolbar.js",
-				"sap/m/ToolbarLayoutData.js",
 				"sap/ui/core/mvc/XMLView.js",
 				"sap/ui/layout/Splitter.js",
 				"sap/ui/layout/VerticalLayout.js",

@@ -18,7 +18,7 @@ sap.ui.define([
 	// delegate further initialization of this library to the Core
 	sap.ui.getCore().initLibrary({
 		name: "sap.ui.integration",
-		version: "1.84.17",
+		version: "1.84.19",
 		dependencies: ["sap.ui.core", "sap.f", "sap.m"],
 		types: [
 			"sap.ui.integration.CardActionType",
@@ -45,7 +45,7 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.ui.integration
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @public
 	 */
 	var thisLib = sap.ui.integration;

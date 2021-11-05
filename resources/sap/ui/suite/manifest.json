@@ -5,7 +5,7 @@
     "type": "library",
     "embeds": [],
     "applicationVersion": {
-      "version": "1.84.17"
+      "version": "1.84.19"
     },
     "title": "SAP UI library: sap.ui.suite (by SAP, Author)",
     "description": "SAP UI library: sap.ui.suite (by SAP, Author)",
@@ -25,7 +25,7 @@
       "minUI5Version": "1.84",
       "libs": {
         "sap.ui.core": {
-          "minVersion": "1.84.17"
+          "minVersion": "1.84.19"
         }
       }
     },

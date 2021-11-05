@@ -5,7 +5,7 @@
     "type": "library",
     "embeds": [],
     "applicationVersion": {
-      "version": "1.84.17"
+      "version": "1.84.19"
     },
     "title": "SAPUI5 library with layout controls.",
     "description": "SAPUI5 library with layout controls.",
@@ -25,7 +25,7 @@
       "minUI5Version": "1.84",
       "libs": {
         "sap.ui.core": {
-          "minVersion": "1.84.17"
+          "minVersion": "1.84.19"
         }
       }
     },

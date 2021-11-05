@@ -23,7 +23,7 @@ sap.ui.define(['./MenuItemBase', './library', 'sap/ui/unified/MenuTextFieldItem'
 	 * @extends sap.ui.unified.MenuTextFieldItem
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public

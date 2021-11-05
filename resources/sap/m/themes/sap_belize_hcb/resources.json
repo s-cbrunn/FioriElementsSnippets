@@ -266,7 +266,7 @@
 		},
 		{
 			"name": "ObjectStatus.less",
-			"size": 3360,
+			"size": 3455,
 			"designtime": true,
 			"theme": "sap_belize_hcb"
 		},
@@ -565,7 +565,7 @@
 		},
 		{
 			"name": "library-RTL.css",
-			"size": 643524,
+			"size": 644020,
 			"theme": "sap_belize_hcb"
 		},
 		{
@@ -575,12 +575,12 @@
 		},
 		{
 			"name": "library.css",
-			"size": 643416,
+			"size": 643912,
 			"theme": "sap_belize_hcb"
 		},
 		{
 			"name": "library.less",
-			"size": 117849,
+			"size": 117944,
 			"designtime": true,
 			"theme": "sap_belize_hcb"
 		},
@@ -592,12 +592,12 @@
 		},
 		{
 			"name": "library_skeleton-RTL.css",
-			"size": 691008,
+			"size": 691504,
 			"theme": "sap_belize_hcb"
 		},
 		{
 			"name": "library_skeleton.css",
-			"size": 690900,
+			"size": 691396,
 			"theme": "sap_belize_hcb"
 		},
 		{

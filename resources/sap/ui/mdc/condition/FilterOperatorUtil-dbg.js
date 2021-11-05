@@ -36,7 +36,7 @@ function(
 		 * Utilities to handle operators of conditions.
 		 *
 		 * @author SAP SE
-		 * @version 1.84.17
+		 * @version 1.84.19
 		 * @since 1.73.0
 		 * @alias sap.ui.mdc.condition.FilterOperatorUtil
 		 *

@@ -142,7 +142,7 @@ function(
 	 * @extends sap.ui.core.Control
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public
@@ -1821,6 +1821,15 @@ function(
 
 			this.addDependent(this._dialog);
 
+			// override Dialog's methods to prevent unwanted screen reader announcing of
+			// the Back button while switching from filter detail page to filter page
+			this._dialog._getFirstFocusableContentElement = function() {
+				return null;
+			};
+			this._dialog._getFirstVisibleButtonDomRef = function() {
+				return null;
+			};
+
 			// CSN# 3696452/2013: ESC key should also cancel dialog, not only close
 			// it
 			var fnDialogEscape = this._dialog.onsapescape;
@@ -1855,7 +1864,12 @@ function(
 		if (this._navContainer === undefined) {
 			this._navContainer = new NavContainer(this.getId()
 			+ '-navcontainer', {
-				pages : []
+				pages : [],
+				afterNavigate: function(oEvent) {
+					if (this._prevSelectedFilterItem) {
+						this._prevSelectedFilterItem.focus();
+					}
+				}.bind(this)
 			});
 		}
 		return this._navContainer;
@@ -2759,14 +2773,8 @@ function(
 
 
 	ViewSettingsDialog.prototype._pressBackButton = function() {
-		var that = this;
 		if (this._vContentPage === 3) {
 			this._updateFilterCounters();
-			this._getNavContainer().attachEvent("afterNavigate", function(){
-				if (that._prevSelectedFilterItem) {
-					that._prevSelectedFilterItem.focus();
-				}
-			});
 			setTimeout(this._getNavContainer()['back'].bind(this._getNavContainer()), 0);
 			this._switchToPage(2);
 			this._segmentedButton.setSelectedButton(this._filterButton);

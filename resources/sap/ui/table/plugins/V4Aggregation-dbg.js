@@ -20,7 +20,7 @@ sap.ui.define([
 	 * @class TODO
 	 * @extends sap.ui.table.plugins.PluginBase
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @since 1.76
 	 * @experimental

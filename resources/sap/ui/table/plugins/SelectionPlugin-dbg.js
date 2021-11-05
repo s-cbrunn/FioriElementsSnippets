@@ -29,7 +29,7 @@ sap.ui.define([
 	 * @class Implements the selection methods for a table.
 	 * @extends sap.ui.core.Element
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @public
 	 * @since 1.64
 	 * @experimental As of version 1.64

@@ -113,7 +113,7 @@ sap.ui.define([
 	 * @class Context - Dialog for IFrame settings in Runtime Authoring
 	 * @extends sap.ui.base.ManagedObject
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @private
 	 * @since 1.78

@@ -52,7 +52,7 @@ sap.ui.define([
 	 * @alias sap.ui.integration.designtime.baseEditor.propertyEditor.BasePropertyEditor
 	 * @author SAP SE
 	 * @since 1.70
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @private
 	 * @experimental 1.70

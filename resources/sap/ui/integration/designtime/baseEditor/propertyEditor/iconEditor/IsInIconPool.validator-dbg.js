@@ -19,7 +19,7 @@ sap.ui.define([
 	 *
 	 * @namespace sap.ui.integration.designtime.baseEditor.propertyEditor.iconEditor.IsInIconPool
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @static
 	 * @since 1.81

@@ -32,7 +32,7 @@ sap.ui.define([
 		 * @namespace
 		 * @alias sap.ui.support.RuleAnalyzer
 		 * @author SAP SE
-		 * @version 1.84.17
+		 * @version 1.84.19
 		 * @public
 		 */
 		var RuleAnalyzer = {

@@ -28,7 +28,7 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.ui.fl.write._internal.condenser.UIReconstruction
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 */
 	var UIReconstruction = {};
 

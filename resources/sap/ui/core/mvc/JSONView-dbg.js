@@ -44,7 +44,7 @@ sap.ui.define([
 	 * @class
 	 * A View defined using JSON.
 	 * @extends sap.ui.core.mvc.View
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @public
 	 * @alias sap.ui.core.mvc.JSONView

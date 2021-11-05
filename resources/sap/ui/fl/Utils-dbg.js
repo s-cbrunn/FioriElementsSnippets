@@ -45,7 +45,7 @@ function(
 	 * @namespace
 	 * @alias sap.ui.fl.Utils
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @experimental Since 1.25.0
 	 */
 	var Utils = {

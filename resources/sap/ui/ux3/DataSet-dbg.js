@@ -44,7 +44,7 @@ sap.ui.define([
 	 * @class
 	 * DataSet
 	 * @extends sap.ui.core.Control
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public

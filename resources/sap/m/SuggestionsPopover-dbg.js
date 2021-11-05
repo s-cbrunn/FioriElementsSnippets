@@ -90,7 +90,7 @@ sap.ui.define([
 	 * @alias sap.m.SuggestionsPopover
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 */
 	var SuggestionsPopover = EventProvider.extend("sap.m.SuggestionsPopover", /** @lends sap.m.SuggestionsPopover.prototype */ {
 
@@ -1035,8 +1035,6 @@ sap.ui.define([
 			var iLength = this._oInput.getValue().length;
 			this._oInput.selectText(iLength, iLength);
 		}
-
-		this._resetTypeAhead();
 	};
 
 	/**

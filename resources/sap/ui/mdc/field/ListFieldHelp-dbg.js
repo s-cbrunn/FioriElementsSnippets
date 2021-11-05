@@ -38,7 +38,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class A field help used in the <code>FieldHelp</code> association in <code>FieldBase</code> controls that shows a list of items.
 	 * @extends sap.ui.mdc.field.FieldHelpBase
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @private
 	 * @since 1.54.0

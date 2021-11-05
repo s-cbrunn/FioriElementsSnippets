@@ -22,7 +22,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class Base type for <code>OutParameter</code> control.
 	 * @extends sap.ui.mdc.field.InParameter
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @abstract
 	 * @private

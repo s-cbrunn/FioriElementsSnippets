@@ -37,12 +37,12 @@ sap.ui.define([
 	 * @extends sap.ui.core.XMLComposite
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @alias sap.ui.mdc.field.ValueHelpPanel
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @since 1.58.0
 	 * @abstract
 	 *

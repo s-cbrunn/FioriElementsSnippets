@@ -23,7 +23,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class Base type for <code>FieldMultiInput</code> control.
 	 * @extends sap.m.MultiInput
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @abstract
 	 * @private

@@ -16,7 +16,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class A field help used in the <code>FieldInfo</code> aggregation in <code>FieldBase</code> controls that allows you to add custom content.
 	 * @extends sap.ui.mdc.field.FieldInfoBase
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @private
 	 * @since 1.54.0

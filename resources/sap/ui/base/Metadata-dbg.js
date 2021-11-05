@@ -27,7 +27,7 @@ sap.ui.define([
 	 *
 	 * @class Metadata for a class.
 	 * @author Frank Weigel
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @since 0.8.6
 	 * @public
 	 * @alias sap.ui.base.Metadata

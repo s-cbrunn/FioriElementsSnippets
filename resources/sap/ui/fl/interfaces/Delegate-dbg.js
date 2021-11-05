@@ -103,7 +103,7 @@ sap.ui.define([
 	 * @namespace sap.ui.fl.interfaces.Delegate
 	 * @experimental Since 1.78
 	 * @since 1.78
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @public
 	 * @interface
 	 */

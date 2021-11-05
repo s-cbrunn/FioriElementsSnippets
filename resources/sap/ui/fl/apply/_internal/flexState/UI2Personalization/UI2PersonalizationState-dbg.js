@@ -19,7 +19,7 @@ sap.ui.define([
 	 * @namespace sap.ui.fl.apply._internal.flexState.UI2Personalization.UI2PersonalizationState
 	 * @experimental Since 1.75
 	 * @since 1.75
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @ui5-restricted
 	 */

@@ -33,7 +33,7 @@ sap.ui.predefine('sap/ui/support/jQuery.sap.support',["sap/ui/support/supportRul
 		 * @deprecated Since version 1.60.0. Please use sap/ui/support/RuleAnalyzer instead.
 		 * @alias jQuery.sap.support
 		 * @author SAP SE
-		 * @version 1.84.17
+		 * @version 1.84.19
 		 * @public
 		 */
 		jQuery.sap.support = {

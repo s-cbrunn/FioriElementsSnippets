@@ -21,7 +21,7 @@ function (BaseObject, ServiceDataProvider, RequestDataProvider, DataProvider, Ex
 	 * When destroyed, all data providers created by this class are also destroyed.
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @private
 	 * @since 1.65

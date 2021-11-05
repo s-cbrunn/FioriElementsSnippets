@@ -349,7 +349,7 @@
 		{
 			"name": "AvatarRenderer-dbg.js",
 			"module": "sap/m/AvatarRenderer.js",
-			"size": 4439,
+			"size": 4524,
 			"isDebug": true,
 			"required": [
 				"sap/base/security/encodeCSS.js",
@@ -359,7 +359,7 @@
 		{
 			"name": "AvatarRenderer.js",
 			"module": "sap/m/AvatarRenderer.js",
-			"size": 2008,
+			"size": 1947,
 			"required": [
 				"sap/base/security/encodeCSS.js",
 				"sap/m/library.js"
@@ -549,7 +549,7 @@
 		{
 			"name": "Breadcrumbs-dbg.js",
 			"module": "sap/m/Breadcrumbs.js",
-			"size": 19213,
+			"size": 19269,
 			"isDebug": true,
 			"required": [
 				"sap/m/BreadcrumbsRenderer.js",
@@ -574,7 +574,7 @@
 		{
 			"name": "Breadcrumbs.js",
 			"module": "sap/m/Breadcrumbs.js",
-			"size": 9802,
+			"size": 9846,
 			"required": [
 				"sap/m/BreadcrumbsRenderer.js",
 				"sap/m/Link.js",
@@ -3726,7 +3726,7 @@
 		{
 			"name": "Input-dbg.js",
 			"module": "sap/m/Input.js",
-			"size": 92294,
+			"size": 92513,
 			"isDebug": true,
 			"required": [
 				"sap/base/assert.js",
@@ -3766,7 +3766,7 @@
 		{
 			"name": "Input.js",
 			"module": "sap/m/Input.js",
-			"size": 35121,
+			"size": 35308,
 			"required": [
 				"sap/base/assert.js",
 				"sap/base/util/deepEqual.js",
@@ -3800,7 +3800,7 @@
 		{
 			"name": "InputBase-dbg.js",
 			"module": "sap/m/InputBase.js",
-			"size": 37782,
+			"size": 37804,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -3828,7 +3828,7 @@
 		{
 			"name": "InputBase.js",
 			"module": "sap/m/InputBase.js",
-			"size": 12228,
+			"size": 12248,
 			"required": [
 				"sap/base/Log.js",
 				"sap/m/InputBaseRenderer.js",
@@ -5195,7 +5195,7 @@
 		{
 			"name": "MultiComboBox-dbg.js",
 			"module": "sap/m/MultiComboBox.js",
-			"size": 109559,
+			"size": 109097,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -5238,7 +5238,7 @@
 		{
 			"name": "MultiComboBox.js",
 			"module": "sap/m/MultiComboBox.js",
-			"size": 44962,
+			"size": 44732,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/assert.js",
@@ -6166,7 +6166,7 @@
 		{
 			"name": "OverflowToolbar-dbg.js",
 			"module": "sap/m/OverflowToolbar.js",
-			"size": 54853,
+			"size": 54748,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -6196,7 +6196,7 @@
 		{
 			"name": "OverflowToolbar.js",
 			"module": "sap/m/OverflowToolbar.js",
-			"size": 21103,
+			"size": 21086,
 			"required": [
 				"sap/base/Log.js",
 				"sap/m/OverflowToolbarAssociativePopover.js",
@@ -7065,7 +7065,7 @@
 		{
 			"name": "PDFViewer-dbg.js",
 			"module": "sap/m/PDFViewer.js",
-			"size": 21407,
+			"size": 21598,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -7082,13 +7082,13 @@
 		},
 		{
 			"name": "PDFViewer.control",
-			"size": 5985,
+			"size": 6201,
 			"designtime": true
 		},
 		{
 			"name": "PDFViewer.js",
 			"module": "sap/m/PDFViewer.js",
-			"size": 8079,
+			"size": 8139,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/assert.js",
@@ -8872,7 +8872,7 @@
 		{
 			"name": "SelectRenderer-dbg.js",
 			"module": "sap/m/SelectRenderer.js",
-			"size": 14361,
+			"size": 14418,
 			"isDebug": true,
 			"required": [
 				"sap/m/library.js",
@@ -8885,7 +8885,7 @@
 		{
 			"name": "SelectRenderer.js",
 			"module": "sap/m/SelectRenderer.js",
-			"size": 4927,
+			"size": 4958,
 			"required": [
 				"sap/m/library.js",
 				"sap/ui/Device.js",
@@ -10339,7 +10339,7 @@
 		{
 			"name": "SuggestionsPopover-dbg.js",
 			"module": "sap/m/SuggestionsPopover.js",
-			"size": 34939,
+			"size": 34912,
 			"isDebug": true,
 			"required": [
 				"sap/m/Bar.js",
@@ -10373,7 +10373,7 @@
 		{
 			"name": "SuggestionsPopover.js",
 			"module": "sap/m/SuggestionsPopover.js",
-			"size": 16546,
+			"size": 16523,
 			"required": [
 				"sap/m/Bar.js",
 				"sap/m/Button.js",
@@ -10847,7 +10847,7 @@
 		{
 			"name": "TableRenderer-dbg.js",
 			"module": "sap/m/TableRenderer.js",
-			"size": 9810,
+			"size": 9921,
 			"isDebug": true,
 			"required": [
 				"sap/m/ColumnListItemRenderer.js",
@@ -10860,7 +10860,7 @@
 		{
 			"name": "TableRenderer.js",
 			"module": "sap/m/TableRenderer.js",
-			"size": 5394,
+			"size": 5486,
 			"required": [
 				"sap/m/ColumnListItemRenderer.js",
 				"sap/m/ListBaseRenderer.js",
@@ -11589,7 +11589,7 @@
 		{
 			"name": "TokenizerRenderer-dbg.js",
 			"module": "sap/m/TokenizerRenderer.js",
-			"size": 3677,
+			"size": 3713,
 			"isDebug": true,
 			"required": [
 				"sap/ui/Device.js",
@@ -11599,7 +11599,7 @@
 		{
 			"name": "TokenizerRenderer.js",
 			"module": "sap/m/TokenizerRenderer.js",
-			"size": 1714,
+			"size": 1743,
 			"required": [
 				"sap/ui/Device.js",
 				"sap/ui/core/InvisibleText.js"
@@ -12198,7 +12198,7 @@
 		{
 			"name": "ViewSettingsDialog-dbg.js",
 			"module": "sap/m/ViewSettingsDialog.js",
-			"size": 122093,
+			"size": 122386,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -12238,7 +12238,7 @@
 		{
 			"name": "ViewSettingsDialog.js",
 			"module": "sap/m/ViewSettingsDialog.js",
-			"size": 50008,
+			"size": 50114,
 			"required": [
 				"sap/base/Log.js",
 				"sap/m/Bar.js",
@@ -12484,7 +12484,7 @@
 		{
 			"name": "WizardProgressNavigator-dbg.js",
 			"module": "sap/m/WizardProgressNavigator.js",
-			"size": 24146,
+			"size": 24136,
 			"isDebug": true,
 			"required": [
 				"sap/m/ActionSheet.js",
@@ -12501,7 +12501,7 @@
 		{
 			"name": "WizardProgressNavigator.js",
 			"module": "sap/m/WizardProgressNavigator.js",
-			"size": 9538,
+			"size": 9528,
 			"required": [
 				"sap/m/ActionSheet.js",
 				"sap/m/Button.js",
@@ -12517,13 +12517,13 @@
 		{
 			"name": "WizardProgressNavigatorRenderer-dbg.js",
 			"module": "sap/m/WizardProgressNavigatorRenderer.js",
-			"size": 5943,
+			"size": 5896,
 			"isDebug": true
 		},
 		{
 			"name": "WizardProgressNavigatorRenderer.js",
 			"module": "sap/m/WizardProgressNavigatorRenderer.js",
-			"size": 3519
+			"size": 3478
 		},
 		{
 			"name": "WizardRenderMode.type",
@@ -16679,7 +16679,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/m/library-preload.js",
-			"size": 2429793,
+			"size": 2430270,
 			"merged": true,
 			"required": [
 				"jquery.sap.global.js",
@@ -17360,7 +17360,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 2407944,
+			"size": 2408684,
 			"isDebug": true
 		},
 		{
@@ -17482,7 +17482,7 @@
 		{
 			"name": "messagebundle.properties",
 			"module": "sap/m/messagebundle.properties",
-			"size": 69799,
+			"size": 69693,
 			"locale": "",
 			"raw": "messagebundle.properties"
 		},
@@ -20788,7 +20788,7 @@
 		{
 			"name": "upload/UploadSet-dbg.js",
 			"module": "sap/m/upload/UploadSet.js",
-			"size": 35024,
+			"size": 35044,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -20819,7 +20819,7 @@
 		{
 			"name": "upload/UploadSet.js",
 			"module": "sap/m/upload/UploadSet.js",
-			"size": 17745,
+			"size": 17759,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/util/deepEqual.js",
@@ -20844,7 +20844,7 @@
 		{
 			"name": "upload/UploadSetItem-dbg.js",
 			"module": "sap/m/upload/UploadSetItem.js",
-			"size": 27354,
+			"size": 27704,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -20875,7 +20875,7 @@
 		{
 			"name": "upload/UploadSetItem.js",
 			"module": "sap/m/upload/UploadSetItem.js",
-			"size": 16510,
+			"size": 16786,
 			"required": [
 				"sap/base/Log.js",
 				"sap/m/BusyIndicator.js",

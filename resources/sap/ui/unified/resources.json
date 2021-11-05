@@ -404,13 +404,13 @@
 		{
 			"name": "CalendarRenderer-dbg.js",
 			"module": "sap/ui/unified/CalendarRenderer.js",
-			"size": 3364,
+			"size": 3275,
 			"isDebug": true
 		},
 		{
 			"name": "CalendarRenderer.js",
 			"module": "sap/ui/unified/CalendarRenderer.js",
-			"size": 1867
+			"size": 1818
 		},
 		{
 			"name": "CalendarRow-dbg.js",
@@ -2800,7 +2800,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/ui/unified/library-preload.js",
-			"size": 497689,
+			"size": 497640,
 			"merged": true,
 			"required": [
 				"sap/base/Log.js",
@@ -2926,7 +2926,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 500788,
+			"size": 500710,
 			"isDebug": true
 		},
 		{

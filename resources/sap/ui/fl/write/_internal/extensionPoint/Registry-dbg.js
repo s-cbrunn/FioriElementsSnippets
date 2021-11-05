@@ -18,7 +18,7 @@ sap.ui.define([
 	 * @alias sap.ui.fl.write._internal.extensionPoint.Registry
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @private
 	 * @ui5-restricted sap.ui.fl

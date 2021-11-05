@@ -50,7 +50,7 @@ function(
 	/**
 	 * @namespace sap.ui.fl.initial._internal.StorageResultDisassemble
 	 * @since 1.70
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @ui5-restricted sap.ui.fl.initial._internal.Storage
 	 * Disassembles a response with a variant section into one or more plain responses.

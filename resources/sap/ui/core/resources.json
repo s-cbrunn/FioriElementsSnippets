@@ -781,7 +781,7 @@
 		{
 			"name": "../../../sap-ui-core-nojQuery.js",
 			"module": "sap-ui-core-nojQuery.js",
-			"size": 686528,
+			"size": 686668,
 			"requiresTopLevelScope": true,
 			"exposedGlobalNames": [
 				"oError"
@@ -939,13 +939,13 @@
 		},
 		{
 			"name": "../../../sap-ui-core-nojQuery.js.map",
-			"size": 907409,
+			"size": 907716,
 			"isDebug": true
 		},
 		{
 			"name": "../../../sap-ui-core.js",
 			"module": "sap-ui-core.js",
-			"size": 803868,
+			"size": 804008,
 			"requiresTopLevelScope": true,
 			"exposedGlobalNames": [
 				"oError"
@@ -1106,7 +1106,7 @@
 		},
 		{
 			"name": "../../../sap-ui-core.js.map",
-			"size": 1143286,
+			"size": 1143593,
 			"isDebug": true
 		},
 		{
@@ -2841,7 +2841,7 @@
 		{
 			"name": "../base/ManagedObject-dbg.js",
 			"module": "sap/ui/base/ManagedObject.js",
-			"size": 224654,
+			"size": 225287,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -2872,7 +2872,7 @@
 		{
 			"name": "../base/ManagedObject.js",
 			"module": "sap/ui/base/ManagedObject.js",
-			"size": 44348,
+			"size": 44488,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/assert.js",
@@ -8330,7 +8330,7 @@
 		},
 		{
 			"name": "../test/OpaCss.css",
-			"size": 2032
+			"size": 2060
 		},
 		{
 			"name": "../test/OpaExtension-dbg.js",
@@ -9145,7 +9145,7 @@
 		{
 			"name": "../test/launchers/componentLauncher-dbg.js",
 			"module": "sap/ui/test/launchers/componentLauncher.js",
-			"size": 2116,
+			"size": 2168,
 			"isDebug": true,
 			"required": [
 				"sap/base/util/uid.js",
@@ -9157,7 +9157,7 @@
 		{
 			"name": "../test/launchers/componentLauncher.js",
 			"module": "sap/ui/test/launchers/componentLauncher.js",
-			"size": 1009,
+			"size": 1036,
 			"required": [
 				"sap/base/util/uid.js",
 				"sap/ui/core/Component.js",
@@ -10089,7 +10089,7 @@
 		{
 			"name": "../test/starter/runTest.js",
 			"module": "sap/ui/test/starter/runTest.js",
-			"size": 1739852,
+			"size": 1739992,
 			"requiresTopLevelScope": true,
 			"exposedGlobalNames": [
 				"oError"
@@ -10262,7 +10262,7 @@
 		},
 		{
 			"name": "../test/starter/runTest.js.map",
-			"size": 1717670,
+			"size": 1717977,
 			"isDebug": true
 		},
 		{
@@ -13844,7 +13844,7 @@
 		{
 			"name": "Popup-dbg.js",
 			"module": "sap/ui/core/Popup.js",
-			"size": 122893,
+			"size": 123134,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -13876,7 +13876,7 @@
 		{
 			"name": "Popup.js",
 			"module": "sap/ui/core/Popup.js",
-			"size": 40278,
+			"size": 40298,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/assert.js",
@@ -15667,7 +15667,7 @@
 		{
 			"name": "format/NumberFormat-dbg.js",
 			"module": "sap/ui/core/format/NumberFormat.js",
-			"size": 101181,
+			"size": 102221,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -15681,7 +15681,7 @@
 		{
 			"name": "format/NumberFormat.js",
 			"module": "sap/ui/core/format/NumberFormat.js",
-			"size": 23905,
+			"size": 24089,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/assert.js",
@@ -15753,7 +15753,7 @@
 		{
 			"name": "library-h2-preload.js",
 			"module": "sap/ui/core/library-h2-preload.js",
-			"size": 109438,
+			"size": 109381,
 			"merged": true,
 			"required": [
 				"jquery.sap.global.js",
@@ -16512,7 +16512,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/ui/core/library-preload.js",
-			"size": 1836333,
+			"size": 1836596,
 			"merged": true,
 			"required": [
 				"jquery.sap.global.js",
@@ -17022,7 +17022,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 2445574,
+			"size": 2445882,
 			"isDebug": true
 		},
 		{
@@ -18221,7 +18221,7 @@
 		},
 		{
 			"name": "resources.json",
-			"size": 273032
+			"size": 272973
 		},
 		{
 			"name": "routing/HashChanger-dbg.js",
@@ -18268,30 +18268,26 @@
 		{
 			"name": "routing/History-dbg.js",
 			"module": "sap/ui/core/routing/History.js",
-			"size": 16874,
+			"size": 17064,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/util/ObjectPath.js",
 				"sap/ui/Device.js",
 				"sap/ui/core/library.js",
-				"sap/ui/core/routing/HashChanger.js",
-				"sap/ui/thirdparty/URI.js",
-				"sap/ui/thirdparty/hasher.js"
+				"sap/ui/core/routing/HashChanger.js"
 			]
 		},
 		{
 			"name": "routing/History.js",
 			"module": "sap/ui/core/routing/History.js",
-			"size": 5547,
+			"size": 5606,
 			"required": [
 				"sap/base/Log.js",
 				"sap/base/util/ObjectPath.js",
 				"sap/ui/Device.js",
 				"sap/ui/core/library.js",
-				"sap/ui/core/routing/HashChanger.js",
-				"sap/ui/thirdparty/URI.js",
-				"sap/ui/thirdparty/hasher.js"
+				"sap/ui/core/routing/HashChanger.js"
 			]
 		},
 		{

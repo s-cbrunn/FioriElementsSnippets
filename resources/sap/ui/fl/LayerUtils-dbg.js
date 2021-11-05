@@ -39,7 +39,7 @@ function(
 	 *
 	 * @namespace sap.ui.fl.LayerUtils
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 */
 	var LayerUtils = {
 		_mLayersIndex: mLayersIndex,

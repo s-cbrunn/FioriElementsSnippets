@@ -16,7 +16,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] initial settings for the new control
 	 * @class tbd
 	 * @extends sap.ui.core.Element
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @abstract
 	 * @private

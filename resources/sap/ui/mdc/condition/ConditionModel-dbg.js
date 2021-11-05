@@ -35,7 +35,7 @@ sap.ui.define([
 		 * @extends sap.ui.model.json.JSONModel
 		 *
 		 * @author SAP SE
-		 * @version 1.84.17
+		 * @version 1.84.19
 		 * @since 1.48.0
 		 * @alias sap.ui.mdc.condition.ConditionModel
 		 *

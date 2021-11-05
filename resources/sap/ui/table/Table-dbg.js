@@ -96,7 +96,7 @@ sap.ui.define([
 	 *     the data model and binding being used.
 	 * </p>
 	 * @extends sap.ui.core.Control
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public
@@ -1083,7 +1083,7 @@ sap.ui.define([
 		var bLangChanged = oChanges.hasOwnProperty("language");
 		this._adaptLocalization(bRtlChanged, bLangChanged).then(function() {
 			this.invalidate();
-		}.bind(this));
+		}.bind(this)).catch(function() {});
 	};
 
 	/**

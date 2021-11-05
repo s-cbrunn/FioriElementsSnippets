@@ -16,7 +16,7 @@
 		{
 			"name": "AnchorBar-dbg.js",
 			"module": "sap/uxap/AnchorBar.js",
-			"size": 33282,
+			"size": 33724,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -48,7 +48,7 @@
 		{
 			"name": "AnchorBar.js",
 			"module": "sap/uxap/AnchorBar.js",
-			"size": 14599,
+			"size": 14901,
 			"required": [
 				"sap/base/Log.js",
 				"sap/m/Button.js",
@@ -1668,7 +1668,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/uxap/library-preload.js",
-			"size": 219846,
+			"size": 220150,
 			"merged": true,
 			"required": [
 				"jquery.sap.global.js",
@@ -1812,7 +1812,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 202764,
+			"size": 202954,
 			"isDebug": true
 		},
 		{

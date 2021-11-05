@@ -170,7 +170,7 @@ sap.ui.define([
 	 * introduction.
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @public
 	 * @alias sap.ui.model.odata.v2.ODataModel

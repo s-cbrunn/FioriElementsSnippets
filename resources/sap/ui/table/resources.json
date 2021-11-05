@@ -222,7 +222,7 @@
 		{
 			"name": "ColumnMenu-dbg.js",
 			"module": "sap/ui/table/ColumnMenu.js",
-			"size": 16151,
+			"size": 16308,
 			"isDebug": true,
 			"required": [
 				"sap/base/assert.js",
@@ -244,7 +244,7 @@
 		{
 			"name": "ColumnMenu.js",
 			"module": "sap/ui/table/ColumnMenu.js",
-			"size": 7358,
+			"size": 7465,
 			"required": [
 				"sap/base/assert.js",
 				"sap/ui/Device.js",
@@ -491,7 +491,7 @@
 		{
 			"name": "Table-dbg.js",
 			"module": "sap/ui/table/Table.js",
-			"size": 149402,
+			"size": 149423,
 			"isDebug": true,
 			"required": [
 				"sap/base/Log.js",
@@ -534,7 +534,7 @@
 		{
 			"name": "Table.js",
 			"module": "sap/ui/table/Table.js",
-			"size": 54770,
+			"size": 54790,
 			"required": [
 				"sap/base/Log.js",
 				"sap/ui/Device.js",
@@ -1150,7 +1150,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/ui/table/library-preload.js",
-			"size": 379151,
+			"size": 379278,
 			"merged": true,
 			"required": [
 				"sap/base/Log.js",
@@ -1268,7 +1268,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 436158,
+			"size": 436244,
 			"isDebug": true
 		},
 		{

@@ -17,7 +17,7 @@ sap.ui.define([
 	 * @alias sap.ui.integration.designtime.editor.fields.DateTimeField
 	 * @author SAP SE
 	 * @since 1.83.0
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @experimental since 1.83.0
 	 * @ui5-restricted

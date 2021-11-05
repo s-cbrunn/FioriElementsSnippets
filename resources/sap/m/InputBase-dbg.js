@@ -62,7 +62,7 @@ function(
 	 * @implements sap.ui.core.IFormContent
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public
@@ -572,7 +572,7 @@ function(
 		mParameters = mParameters || this.getChangeEventParams();
 
 		// check the control is editable or not
-		if (!this.getEditable() || !this.getEnabled()) {
+		if (this.getDomRef() && (!this.getEditable() || !this.getEnabled())) {
 			return;
 		}
 

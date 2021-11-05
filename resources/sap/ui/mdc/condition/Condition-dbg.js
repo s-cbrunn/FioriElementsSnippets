@@ -26,7 +26,7 @@ sap.ui.define([
 		 * @class Utilities to handle operators of conditions
 		 *
 		 * @author SAP SE
-		 * @version 1.84.17
+		 * @version 1.84.19
 		 * @alias sap.ui.mdc.condition.Condition
 		 *
 		 * @private

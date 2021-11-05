@@ -99,7 +99,7 @@ sap.ui.define([
 	 * @author SAP SE
 	 * @public
 	 * @since 1.58.0
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @namespace
 	 * @alias module:sap/ui/core/ComponentSupport
 	 */

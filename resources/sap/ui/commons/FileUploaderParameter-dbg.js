@@ -20,7 +20,7 @@ sap.ui.define(['sap/base/Log', './library', 'sap/ui/unified/FileUploaderParamete
 	 * @extends sap.ui.unified.FileUploaderParameter
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public

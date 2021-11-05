@@ -631,17 +631,19 @@
 		{
 			"name": "apply/_internal/changes/FlexCustomData-dbg.js",
 			"module": "sap/ui/fl/apply/_internal/changes/FlexCustomData.js",
-			"size": 9359,
+			"size": 9579,
 			"isDebug": true,
 			"required": [
+				"sap/base/Log.js",
 				"sap/ui/core/CustomData.js"
 			]
 		},
 		{
 			"name": "apply/_internal/changes/FlexCustomData.js",
 			"module": "sap/ui/fl/apply/_internal/changes/FlexCustomData.js",
-			"size": 2247,
+			"size": 2376,
 			"required": [
+				"sap/base/Log.js",
 				"sap/ui/core/CustomData.js"
 			]
 		},
@@ -2697,7 +2699,7 @@
 		{
 			"name": "library-h2-preload.js",
 			"module": "sap/ui/fl/library-h2-preload.js",
-			"size": 41219,
+			"size": 41237,
 			"merged": true,
 			"required": [
 				"sap/base/Log.js",
@@ -3018,7 +3020,7 @@
 		{
 			"name": "library-preload.js",
 			"module": "sap/ui/fl/library-preload.js",
-			"size": 376379,
+			"size": 376508,
 			"merged": true,
 			"required": [
 				"sap/base/Log.js",
@@ -3278,7 +3280,7 @@
 		},
 		{
 			"name": "library-preload.js.map",
-			"size": 443019,
+			"size": 443183,
 			"isDebug": true
 		},
 		{
@@ -3856,7 +3858,7 @@
 		},
 		{
 			"name": "resources.json",
-			"size": 100250
+			"size": 100269
 		},
 		{
 			"name": "support/Flexibility-dbg.js",

@@ -43,7 +43,7 @@ sap.ui.define([
 	 * and requests, unified behavior of instant and deferred uploads, as well as improved progress indication.
 	 * @extends sap.ui.core.Control
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @constructor
 	 * @public
 	 * @since 1.63
@@ -669,6 +669,7 @@ sap.ui.define([
 				mimeType: this.getMediaTypes(),
 				icon: "",
 				iconFirst: false,
+				multiple: true,
 				style: "Transparent",
 				name: "uploadSetFileUploader",
 				sameFilenameAllowed: true,

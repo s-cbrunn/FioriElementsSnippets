@@ -15,7 +15,7 @@ sap.ui.define([
 	"use strict";
 
 	sap.ui.getCore().initLibrary({
-		version: "1.84.17",
+		version: "1.84.19",
 		name: "sap.ui.mdc",
 		dependencies: ["sap.ui.core", "sap.m"],
 		designtime: "sap/ui/mdc/designtime/library.designtime",
@@ -146,7 +146,7 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.ui.mdc
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 * @private
 	 * @experimental
 	 * @ui5-restricted

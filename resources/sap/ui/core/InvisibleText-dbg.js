@@ -25,7 +25,7 @@ sap.ui.define(['./Control', './library', "sap/base/Log", "sap/base/security/enco
 	 * @extends sap.ui.core.Control
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @public
 	 * @since 1.27.0

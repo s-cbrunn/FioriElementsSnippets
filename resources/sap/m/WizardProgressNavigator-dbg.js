@@ -41,7 +41,7 @@ function(
 	 * @extends sap.ui.core.Control
 	 *
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @private
@@ -622,7 +622,7 @@ function(
 		this._oActionSheet.removeAllButtons();
 		for (var i = iFromStep; i < iToStep; i++) {
 			sIcon = this.getStepIcons()[i];
-			sTitle = this._aCachedSteps[i].getAttribute("aria-roledescription");
+			sTitle = this._aCachedSteps[i].getAttribute("aria-label");
 
 			this._oActionSheet.addButton(new Button({
 				width: "200px",

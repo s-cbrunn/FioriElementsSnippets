@@ -4,7 +4,7 @@
 		{
 			"name": "../../../sap-ui-integration-cardEditor.js",
 			"module": "sap-ui-integration-cardEditor.js",
-			"size": 784755,
+			"size": 784968,
 			"merged": true,
 			"included": [
 				"sap/ui/model/base/ManagedObjectModel.js",
@@ -208,7 +208,7 @@
 		{
 			"name": "../../../sap-ui-integration-editor.js",
 			"module": "sap-ui-integration-editor.js",
-			"size": 506025,
+			"size": 506007,
 			"merged": true,
 			"included": [
 				"sap/m/ColorPaletteRenderer.js",
@@ -299,7 +299,7 @@
 		{
 			"name": "../../../sap-ui-integration-nojQuery.js",
 			"module": "sap-ui-integration-nojQuery.js",
-			"size": 1901266,
+			"size": 1901606,
 			"requiresTopLevelScope": true,
 			"exposedGlobalNames": [
 				"oError"
@@ -741,7 +741,7 @@
 		{
 			"name": "../../../sap-ui-integration.js",
 			"module": "sap-ui-integration.js",
-			"size": 2030605,
+			"size": 2030945,
 			"requiresTopLevelScope": true,
 			"exposedGlobalNames": [
 				"oError"

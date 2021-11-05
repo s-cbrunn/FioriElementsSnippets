@@ -145,7 +145,7 @@ function(
 	 *
 	 * @extends sap.m.InputBase
 	 * @author SAP SE
-	 * @version 1.84.17
+	 * @version 1.84.19
 	 *
 	 * @constructor
 	 * @public
@@ -1291,6 +1291,10 @@ function(
 		if (this.getEnabled() && this.getEditable() && !(this.getValueHelpOnly() && this.getShowValueHelp())) {
 			this.fireSubmit({value: this.getValue()});
 		}
+
+		if (!this.isMobileDevice()) {
+			this._getSuggestionsPopover()._resetTypeAhead();
+		}
 	};
 
 	/**
@@ -2291,6 +2295,7 @@ function(
 					this._oSuggPopover._bSuggestionItemTapped = true;
 					var oSelectedListItem = oEvent.getParameter("listItem");
 					this.setSelectionRow(oSelectedListItem, true);
+					this._oSuggPopover._resetTypeAhead();
 				}.bind(this),
 				sticky: [library.Sticky.ColumnHeaders]
 			});
@@ -2595,6 +2600,9 @@ function(
 
 		if (!this._hasTabularSuggestions() && !bTabular) {
 			this._oSuggPopover._oList.attachItemPress(function (oEvent) {
+
+				this._oSuggPopover._resetTypeAhead();
+
 				if (Device.system.desktop) {
 					this.focus();
 				}
@@ -2669,6 +2677,7 @@ function(
 			onsapenter: function () {
 				if (this.getAutocomplete()) {
 					this._oSuggPopover._finalizeAutocomplete();
+					this._oSuggPopover._resetTypeAhead();
 				}
 				this._closeSuggestionPopup();
 			}
