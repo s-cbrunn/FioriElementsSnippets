@@ -1,9 +1,19 @@
 # Frosch
 
-```javascript
+```perl
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+
+</br>
+Hier steht ein normaler Text. Hier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler TextHier steht ein normaler Text
+</br>
+|View-Typen       |Dateiendung | 
+|-----------------|------------|
+|JavaScript-View  |.view.js          
+|XML-View         |.view.xml
+|HTML-View        |.view.html
+|JSON-View        |.view.json
 
 
 </br>

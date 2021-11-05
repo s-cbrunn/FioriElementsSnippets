@@ -11,7 +11,6 @@ sap.ui.define([
 			return this.oJsonModel
 		},
 		getFolderStructure: function () {
-			this.folderStructure = {};
 			this.folderRequest = new XMLHttpRequest();
 
 			if (window.location.hostname === "localhost") {

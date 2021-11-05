@@ -43,14 +43,18 @@ sap.ui.define([
 					oDetailPage.setTitle(sTitel);
 
 					FolderStructure.getDocument(sDirectUrl).then(function (sMarkdownText) {
-						debugger;
-						var oConverter = new showdown.Converter();
-
-					    var sHTML = oConverter.makeHtml(sMarkdownText);
-						//sHTML = "<div id=\"idContent\">" + sHTML + "</div>";
-
-						var oHTML = this.byId("idHTMLContent");
 						
+						var oConverter = new showdown.Converter();
+						var oOptions = showdown.getOptions();
+						debugger;
+					
+						oConverter.setOption('tables', true);
+						oConverter.setOption('completeHTMLDocument',true);
+					    var sHTML = oConverter.makeHtml(sMarkdownText);
+						
+						sHTML = sHTML.replace("</head>", "<link rel=\"stylesheet\" href=\"css/markdown.css\"></head>");
+						
+						var oHTML = this.byId("idHTMLContent");
 						
 						oHTML.setContent("");
 				        oHTML.setContent(sHTML);

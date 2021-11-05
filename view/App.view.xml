@@ -1,6 +1,7 @@
 <mvc:View controllerName="de.scbrunn.fesnippet.controller.App"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
 	displayBlock="true"
 	xmlns="sap.m">
 
@@ -14,7 +15,9 @@
 		</masterPages>
 		<detailPages>
 			<Page id="idDetailPage" title="">
+			<l:HorizontalLayout class="sapUiContentPadding" >
 				<core:HTML id="idHTMLContent" />
+				</l:HorizontalLayout>
 			</Page>
 		</detailPages>
 		
