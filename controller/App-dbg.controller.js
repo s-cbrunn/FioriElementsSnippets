@@ -38,13 +38,13 @@ sap.ui.define([
 						
 						var oConverter = new showdown.Converter();
 						var oOptions = showdown.getOptions();
-						debugger;
 					
 						oConverter.setOption('tables', true);
 						oConverter.setOption('completeHTMLDocument',true);
+						sMarkdownText = sMarkdownText.replace("/img/", "https://raw.githubusercontent.com/s-cbrunn/FioriElementsSnippets/main/img/");
 					    var sHTML = oConverter.makeHtml(sMarkdownText);
 						
-						sHTML = sHTML.replace("</head>", "<link rel=\"stylesheet\" href=\"css/markdown.css\"></head>");
+						
 						
 						var oHTML = this.byId("idHTMLContent");
 						

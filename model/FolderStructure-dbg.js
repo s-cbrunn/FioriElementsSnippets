@@ -19,11 +19,11 @@ sap.ui.define([
 
 				this.folderRequest.open('GET', "https://api.github.com/repos/s-cbrunn/FioriElementsSnippets/contents/", true);
 			    this.folderRequest.send();    
-				debugger;
+	
 				this.folderRequest.onreadystatechange = function () {
 				
 					if (this.folderRequest.readyState === 4) {
-						debugger;
+						
 						var aGitHubObject = JSON.parse(this.folderRequest.responseText);	
 						for(var i=0; i < aGitHubObject.length; i++){
 							if(aGitHubObject[i].name === "content"){
