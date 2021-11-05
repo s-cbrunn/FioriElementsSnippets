@@ -19,7 +19,7 @@ Hier steht ein normaler Text. Hier steht ein normaler TextHier steht ein normale
 </br>
 </br>
 
-![SEOCOMPODF](https://github.com/s-cbrunn/FioriElementsSnippets/blob/main/img/frog.JPG "Tabelle SEOCOMPODF")
+![SEOCOMPODF](https://raw.githubusercontent.com/s-cbrunn/FioriElementsSnippets/main/img/frog.JPG "Tabelle SEOCOMPODF")
 
 
 
