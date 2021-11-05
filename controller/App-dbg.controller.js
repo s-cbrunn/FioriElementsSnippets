@@ -12,18 +12,10 @@ sap.ui.define([
 		return Controller.extend("de.scbrunn.fesnippet.controller.App", {
 			onInit: function () {
 
+				this._theme = {"light":false};
 				this.getView().setModel(FolderStructure.getJSONModel());
 				FolderStructure.getFolderStructure();
 
-				/*
-				//
-
-				var converter = new showdown.Converter(),
-					text = '# Hello, Fiori Elements World',
-					html = converter.makeHtml(text);
-
-				var oHTML = this.byId("idHTMLContent");
-				oHTML.setContent(html); */
 			},
 
 			onToggleOpenState: function (oEvent) {
@@ -64,6 +56,19 @@ sap.ui.define([
 				
 				}
 
+			},
+
+			onChangeTheme: function(oEvent){
+				
+				if (this._theme.light === true){
+					sap.ui.getCore().applyTheme("sap_fiori_3_dark");
+					this._theme.light = false;
+				}
+				else{
+					sap.ui.getCore().applyTheme("sap_fiori_3");
+					this._theme.light = true;
+				}
+				
 			}
 		});
 	});

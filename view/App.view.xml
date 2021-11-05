@@ -1,26 +1,29 @@
 <mvc:View controllerName="de.scbrunn.fesnippet.controller.App"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.layout"
-	displayBlock="true"
+	xmlns:l="sap.ui.layout" displayBlock="true"
 	xmlns="sap.m">
 
-	<SplitApp id="idSplitApp" initialDetail="detail" initialMaster="master">
+	<SplitApp id="idSplitApp" initialDetail="detail" initialMaster="master" homeIcon="sap-icon://home">
 		<masterPages>
 			<Page id="idNavPage" title="Navigation">
-				<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState"  >
+				<Tree id="idNavTree" items="{path: '/'}" busyIndicatorDelay="0" toggleOpenState="onToggleOpenState">
 					<StandardTreeItem title="{text}" press=".onSelectTopic($event, ${directLink}, ${text})" type="Active" />
 				</Tree>
 			</Page>
 		</masterPages>
 		<detailPages>
 			<Page id="idDetailPage" title="">
-			<l:HorizontalLayout class="sapUiContentPadding" >
-				<core:HTML id="idHTMLContent" />
+				<headerContent>
+					<Button icon="sap-icon://lightbulb" press=".onChangeTheme" tooltip="{i18n>theme}" />
+				</headerContent>
+
+				<l:HorizontalLayout class="sapUiContentPadding">
+					<core:HTML id="idHTMLContent" />
 				</l:HorizontalLayout>
 			</Page>
 		</detailPages>
-		
+
 	</SplitApp>
 
 </mvc:View>
