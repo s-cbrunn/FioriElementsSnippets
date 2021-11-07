@@ -13,7 +13,7 @@ sap.ui.define([
 		getFolderStructure: function () {
 			this.folderRequest = new XMLHttpRequest();
 
-			if (window.location.hostname === "localhost1") {
+			if (window.location.hostname === "localhost") {
 				this.sendRequest('content/', '')
 			} else {
 
@@ -40,7 +40,7 @@ sap.ui.define([
 		},
 
 		sendRequest: function (sPath, sModelPath) {
-			if (window.location.hostname === "localhost1") {
+			if (window.location.hostname === "localhost") {
 				this._sendRequestLocalHost(sPath, sModelPath);
 			} else {
 				this._sendRequestGitHub(sPath, sModelPath)
@@ -135,13 +135,12 @@ sap.ui.define([
 				var documentRequest = new XMLHttpRequest();
 				documentRequest.onreadystatechange = function () {
 					if (documentRequest.readyState == 4 && documentRequest.status == 200) {
-						if (window.location.hostname === "localhost1") {
+						if (window.location.hostname === "localhost") {
 							
 							var content = documentRequest.responseText;
 							resolve(content);
 						}
 						else {
-							debugger;
 							var oGitHubObject = JSON.parse(documentRequest.responseText);
 							var decodedString= decodeURIComponent(atob(oGitHubObject.content).split('').map(function(c) {
 								return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
