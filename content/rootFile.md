@@ -19,7 +19,7 @@ Hier steht ein normaler Text. Hier steht ein normaler TextHier steht ein normale
 </br>
 </br>
 
-![Frosch](/img/frog.jpg "Frosch")
+![SEOCOMPODF](/img/frog.JPG "Tabelle SEOCOMPODF")
 
 
 
@@ -29,4 +29,3 @@ Hier steht ein normaler Text. Hier steht ein normaler TextHier steht ein normale
 </br>
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/6_VuA5QcuHQ/0.jpg)](https://www.youtube.com/watch?v=6_VuA5QcuHQ)
-
