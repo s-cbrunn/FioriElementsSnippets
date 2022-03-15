@@ -43,7 +43,7 @@ sap.ui.define([
 						oConverter.setOption('completeHTMLDocument', true);
 
 						if (window.location.hostname !== "localhost") {
-							sMarkdownText = sMarkdownText.replace("/img/", "https://raw.githubusercontent.com/s-cbrunn/FioriElementsSnippets/main/img/");
+							sMarkdownText = sMarkdownText.replaceAll("/img/", "https://raw.githubusercontent.com/s-cbrunn/FioriElementsSnippets/main/img/");
 						}
 						
 
