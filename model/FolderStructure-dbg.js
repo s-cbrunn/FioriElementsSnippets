@@ -41,6 +41,7 @@ sap.ui.define([
 
 		sendRequest: function (sPath, sModelPath) {
 			if (window.location.hostname === "localhost") {
+				debugger;
 				this._sendRequestLocalHost(sPath, sModelPath);
 			} else {
 				this._sendRequestGitHub(sPath, sModelPath)
@@ -65,21 +66,30 @@ sap.ui.define([
 
 						if (directoryElements[i].className === 'icon icon-directory') {	// Folder
 							var sFolderName = directoryElements[i].title.substring(0, directoryElements[i].title.length - 1);
+							var sFullName = sFolderName;
+							var aOrderName = sFolderName.split("_");
+							var index = aOrderName[0];
+							    sFolderName = aOrderName[1];
 							var sUrl = directoryElements[i].href.replace('http://', '').replace(directoryElements[i].host, '');
 							var oFolderObject = {
 								text: sFolderName,
+								fullName: sFullName,
 								childUrl: sUrl,
 								nodes: [{ text: "", }]
 							};
-							this._aTreeStructure.push(oFolderObject);
+							this._aTreeStructure.splice(index,0,oFolderObject);
 						} else if (directoryElements[i].className === 'icon icon icon-md icon-text' ||
 							directoryElements[i].className === 'logo logo-img-1x') {	// File
 							var sFileName = directoryElements[i].title.substring(0, directoryElements[i].title.length);
+							var sFullName = sFileName;
+							var aOrderName = sFileName.split("_");
+							var index = aOrderName[0];
+							sFileName = aOrderName[1];
 							var oFileObject = {
-								directLink: sPath + sFileName,
+								directLink: sPath + sFullName,
 								text: sFileName.replace(/\.[^/.]+$/, "")
 							};
-							this._aTreeStructure.push(oFileObject);
+							this._aTreeStructure.splice(index,0,oFileObject);
 						}
 					}
 
@@ -108,18 +118,27 @@ sap.ui.define([
 					for (var i = 0; i < oGitHubObjectTree.length; i++) {
 
 						if (oGitHubObjectTree[i].type === "tree") {  // Folder
+							var sFullName = oGitHubObjectTree[i].path
+							var aOrderName = oGitHubObjectTree[i].path.split("_");
+							var index = aOrderName[0];
+							var sFolderName = aOrderName[1];
 							var oFolderObject = {
-								text: oGitHubObjectTree[i].path,
+								text: sFolderName,
+								fullName: sFullName,
 								childUrl: oGitHubObjectTree[i].url,
 								nodes: [{ text: "", }]
 							};
-							this._aTreeStructure.push(oFolderObject);
-						} else {								   // File
+							this._aTreeStructure.splice(index,0,oFolderObject);
+						} else {                                          // File
+							var sText = oGitHubObjectTree[i].path.replace(/\.[^/.]+$/, "");
+							var aOrderName = sText.split("_");
+							var index = aOrderName[0];
+							var sFileName = aOrderName[1];								  
 							var oFileObject = {
 								directLink: oGitHubObjectTree[i].url,
-								text: oGitHubObjectTree[i].path.replace(/\.[^/.]+$/, "")
+								text: sFileName
 							};
-							this._aTreeStructure.push(oFileObject);
+							this._aTreeStructure.splice(index,0,oFileObject);
 						}
 
 					}
